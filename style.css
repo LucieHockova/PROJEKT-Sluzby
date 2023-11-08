@@ -1,0 +1,251 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/* font-family: 'Montserrat', sans-serif;*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #FAFAFA;
+    border: 1px solid #cfcfcf;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.cestovatel {
+    width: 350px;
+    height: 290px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+ /*   font-weight: 500;*/
+    color: black;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-decoration-line: underline;
+    text-decoration-color: #407BFF;
+    text-underline-position: under;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+h2 {
+    font-size: 16px;
+ /*   font-weight: 500;*/
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+ /*   font-weight: 300;*/
+    color: #8B8B8B;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    font-size: 13px;
+ /*   font-weight: 400;*/
+    color: white;
+    height: 40px;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+.modra {
+    border-radius: 20px;
+    background-color: #407BFF;
+    border: 1px solid #407BFF;
+    width: 195px;
+    margin-bottom: 10px;
+}
+
+.seda {
+    border-radius: 20px;
+    background-color: #8B8B8B;
+    border: 1px solid #8B8B8B;
+    width: 220px;
+    margin-bottom: 60px;
+}
+
+.ikona {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #407BFF1F;
+    margin-bottom: 15px;
+    display: flex;
+    padding: 20px;
+    height: 80px;
+}
+
+.ikona img {
+    width: 50px;
+    height: 40px;
+}
+
+.ikona p {
+    font-size: 13px;
+    flex: 1 1 auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 640px) 
+{
+    body {
+        width: 768px;
+    }
+
+    .cestovatel {
+        width: 400px;
+        height: 332px;
+        margin: 60px 184px 30px 184px;
+    }
+
+    .odstavec {
+        width: 550px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        height: 40px;
+    }
+
+    li {
+        display: inline-block;  
+    }
+
+    .modra,
+    .seda {
+        margin-bottom: 0;
+    }
+
+    .modra {
+        margin-right: 20px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    .kontajner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ikona {
+        width: 230px;
+        height: 170px;
+        flex-direction: column;
+        display: block;
+        padding: 0;
+    }
+
+    .ikona img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .ikona p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1100px)
+{
+    body {
+        width: 1200px;
+        padding-left: 80px;
+        text-align: left;
+    }
+     
+    .vrchni {
+        display: flex;
+    }
+
+    .cestovatel {
+        width: 426px;
+        height: 354px;
+        order: 2;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    .box {
+        flex-direction: column;
+        margin-top: 133px;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    .ikona {
+        width: 170px;
+        height: 191px;
+        display: flex;
+        padding: 0;
+        margin-bottom: 0;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .ikona img {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .kancelar,
+    .misto {
+        width: 430px;
+        margin-bottom: 0;
+    }
+
+    .stredni {
+        display: flex;
+        margin-top: 80px;
+    }
+   
+    .horni {
+        order: 1;
+        margin-right: 40px;
+    }
+   
+    .prava {
+        order: 2;
+    }
+   
+    .dolni {
+        display: flex;
+        margin-top: 80px;
+    }
+
+    .spodni {
+        margin-left: 60px;
+    }
+
+}
+
+
+
+
+
